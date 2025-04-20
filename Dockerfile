@@ -1,0 +1,12 @@
+FROM ghcr.io/lavalink-devs/lavalink:4
+COPY ./application.yml /opt/Lavalink/application.yml
+COPY ./plugins/ /opt/Lavalink/plugins/
+
+ARG _JAVA_OPTIONS
+ENV _JAVA_OPTIONS=$JAVA_OPTIONS
+ARG SERVER_PORT
+ENV SERVER_PORT=2333
+ARG LAVALINK_SERVER_PASSWORD
+ENV LAVALINK_SERVER_PASSWORD=$LAVALINK_SERVER_PASSWORD
+
+EXPOSE 2333
