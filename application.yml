@@ -1,5 +1,5 @@
 server: # REST and WS server
-  port: ${PORT}
+  port: 2333
   address: 0.0.0.0
   http2:
     enabled: false # Whether to enable HTTP/2 support
@@ -21,7 +21,7 @@ plugins:
       - WEBEMBEDDED
 lavalink:
   plugins:
-    - dependency: "dev.lavalink.youtube:youtube-plugin:1.12.0"
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.13.0"
       snapshot: false # Set to true if you want to use a snapshot version.
   #  pluginsDir: "./plugins" # optional, defaults to "./plugins"
   #  defaultPluginRepository: "https://maven.lavalink.dev/releases" # optional, defaults to the Lavalink release repository
